@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/banana_munch.mk
+    $(LOCAL_DIR)/havoc_munch.mk
 
 COMMON_LUNCH_CHOICES := \
-    banana_munch-user \
-    banana_munch-userdebug \
-    banana_munch-eng
+    havoc_munch-user \
+    havoc_munch-userdebug \
+    havoc_munch-eng

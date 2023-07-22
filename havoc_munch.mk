@@ -8,8 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common BananaDroid stuff
-$(call inherit-product, vendor/banana/config/common.mk)
+# Inherit some common HavocOS stuff
+$(call inherit-product, vendor/havoc/config/common.mk)
 
 # Inherit from munch device
 $(call inherit-product, device/xiaomi/munch/device.mk)
@@ -17,8 +17,13 @@ $(call inherit-product, device/xiaomi/munch/device.mk)
 # Inherit viper4android stuff
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
-#Banandroid Stuff
-BANANA_MAINTAINER := Mudit
+#HavocOS Stuff
+ 
+ro.havoc.device.name=k40s / Poco F4 / munch
+ro.havoc.group.url=https://t.me/EduardoA3677
+ro.havoc.maintainer= EDuardo Alvarado
+ro.havoc.maintainer.username=EduardoA3677
+
 TARGET_ENABLE_BLUR := true
 TARGET_EXCLUDE_MATLOG := true
 TARGET_BOOT_ANIMATION_RES := 720
@@ -34,7 +39,7 @@ TARGER_SUPPORTS_NEXT_GEN_ASSISTANT := true
 #BUILD_CORE_GAPPS_EXTRA := true
 TARGET_USE_GOOGLE_TELEPHONY := true
 
-PRODUCT_NAME := banana_munch
+PRODUCT_NAME := havoc_munch
 PRODUCT_DEVICE := munch
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
